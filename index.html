@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>"Новые горизонты"</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header"> 
+            <div class="header__bar">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-xl-3">
+                            <a href="/" class="header__logo logo">
+                                <img src="images/logo.png" alt="Новые горизонты">
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-xl-6">
+                            <form class="header__search" action="#">
+                                <input placeholder="Поиск..." class="header__search-input" type="text">
+                            </form>
+                        </div>
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="header__personal">
+                                <div class="header__personal-lk">
+                                    <a class="header__personal-lk-item" href="#">Вход</a>
+                                    <a class="header__personal-lk-item" href="#">Регистрация</a>
+                                </div>
+                                <div class="header__personal-basket">
+                                    <a href="#" class="header__wish-list">
+                                        <svg width="25" height="25" viewbox="0 0 25 25" fill="" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.5 23.6092C12.1441 23.6092 11.8009 23.4802 11.5335 23.246C10.5236 22.3629 9.54989 21.533 8.69082 20.801L8.68643
+                                                    20.7972C6.16778 18.6508 3.99284 16.7973 2.47955 14.9714C0.787924 12.9301 0 10.9947 0 8.88042C0 6.82621 0.704383 4.93107
+                                                    1.98326 3.54385C3.27739 2.14024 5.05313 1.36719 6.98393 1.36719C8.42703 1.36719 9.74863 1.82343 10.9119 2.72312C11.499
+                                                    3.17726 12.0312 3.73306 12.5 4.38137C12.969 3.73306 13.501 3.17726 14.0882 2.72312C15.2515 1.82343 16.5731 1.36719
+                                                    18.0162 1.36719C19.9468 1.36719 21.7228 2.14024 23.0169 3.54385C24.2958 4.93107 25 6.82621 25 8.88042C25 10.9947 24.2122
+                                                    12.9301 22.5206 14.9712C21.0073 16.7973 18.8326 18.6506 16.3143 20.7968C15.4537 21.53 14.4785 22.3612 13.4662
+                                                    23.2464C13.199 23.4802 12.8557 23.6092 12.5 23.6092V23.6092ZM6.98393 2.83165C5.46702 2.83165 4.07352 3.43704 3.05976
+                                                    4.53644C2.03094 5.65243 1.46427 7.19509 1.46427 8.88042C1.46427 10.6586 2.12516 12.249 3.60698 14.0369C5.03921 15.7652
+                                                    7.16952 17.5806 9.6361 19.6827L9.64068 19.6865C10.503 20.4214 11.4805 21.2545 12.4979 22.1441C13.5214 21.2528 14.5004
+                                                    20.4184 15.3644 19.6823C17.8308 17.5802 19.9609 15.7652 21.3932 14.0369C22.8748 12.249 23.5357 10.6586 23.5357
+                                                    8.88042C23.5357 7.19509 22.969 5.65243 21.9402 4.53644C20.9266 3.43704 19.5329 2.83165 18.0162 2.83165C16.905 2.83165
+                                                    15.8848 3.18489 14.9839 3.88145C14.1811 4.50249 13.6219 5.28755 13.294 5.83687C13.1254 6.11935 12.8286 6.28796 12.5
+                                                    6.28796C12.1713 6.28796 11.8746 6.11935 11.7059 5.83687C11.3783 5.28755 10.819 4.50249 10.016 3.88145C9.1152 3.18489
+                                                    8.09496 2.83165 6.98393 2.83165V2.83165Z"
+                                                fill="#E6CCBF"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="header__basket">
+                                        <svg width="26" height="26" viewbox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.37692 16.8088H8.37811C8.3791 16.8088 8.3801 16.8086 8.38109 16.8086H22.1914C22.5314 16.8086 22.8303 16.5831 22.9238
+                                                    16.2561L25.9706 5.59209C26.0363 5.36218 25.9903 5.11502 25.8465 4.92419C25.7025 4.73337 25.4773 4.62109 25.2383
+                                                    4.62109H6.62021L6.0757 2.1707C5.99814 1.82217 5.68909 1.57422 5.33203 1.57422H0.761719C0.340988 1.57422 0 1.91521 0
+                                                    2.33594C0 2.75667 0.340988 3.09766 0.761719 3.09766H4.72107C4.81747 3.53188 7.32678 14.824 7.47119 15.4736C6.66167
+                                                    15.8255 6.09375 16.6326 6.09375 17.5703C6.09375 18.8303 7.1189 19.8555 8.37891 19.8555H22.1914C22.6121 19.8555 22.9531
+                                                    19.5145 22.9531 19.0938C22.9531 18.673 22.6121 18.332 22.1914 18.332H8.37891C7.95897 18.332 7.61719 17.9902 7.61719
+                                                    17.5703C7.61719 17.151 7.95778 16.8098 8.37692 16.8088ZM24.2284 6.14453L21.6167 15.2852H8.98987L6.95862 6.14453H24.2284Z"
+                                                fill="black"/>
+                                            <path
+                                                d="M7.61719 22.1406C7.61719 23.4006 8.64233 24.4258 9.90234 24.4258C11.1624 24.4258 12.1875 23.4006 12.1875
+                                                    22.1406C12.1875 20.8806 11.1624 19.8555 9.90234 19.8555C8.64233 19.8555 7.61719 20.8806 7.61719 22.1406ZM9.90234
+                                                    21.3789C10.3223 21.3789 10.6641 21.7207 10.6641 22.1406C10.6641 22.5606 10.3223 22.9023 9.90234 22.9023C9.48241 22.9023
+                                                    9.14063 22.5606 9.14063 22.1406C9.14063 21.7207 9.48241 21.3789 9.90234 21.3789Z"
+                                                fill="black"/>
+                                            <path
+                                                d="M18.3828 22.1406C18.3828 23.4006 19.408 24.4258 20.668 24.4258C21.928 24.4258 22.9531 23.4006 22.9531 22.1406C22.9531
+                                                    20.8806 21.928 19.8555 20.668 19.8555C19.408 19.8555 18.3828 20.8806 18.3828 22.1406ZM20.668 21.3789C21.0879 21.3789
+                                                    21.4297 21.7207 21.4297 22.1406C21.4297 22.5606 21.0879 22.9023 20.668 22.9023C20.248 22.9023 19.9062 22.5606 19.9062
+                                                    22.1406C19.9062 21.7207 20.248 21.3789 20.668 21.3789Z"
+                                                fill="black"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-xl-3">
+                            <button class="services-menu">Наши услуги</button>
+                        </div>
+                        <div class="col-lg-9 col-xl-9">
+                            <ul class="menu">
+                                
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Магазин</a>
+                                    </li>
+                                
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Заявки</a>
+                                    </li>
+                                
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Наши авторы</a>
+                                    </li>
+                                
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Новости</a>
+                                    </li>
+                                
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Помощь</a>
+                                    </li>
+                                
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Контакты</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+                </header>
+                <main class="main"> 
+            <section class="slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        
+                            <div class="swiper-slide">
+                                <div class="slider__item" style="background: url(./images/main-slider/1.jpg)">
+                                    <div class="container">
+                                        <div class="slider__title">
+                                            Издай свою книгу!
+                                        </div>
+                                        <div class="slider__text">
+                                            Наши специалисты станут вашими проводниками на всех этапах подготовки, производства и реализации книги
+                                        </div>
+                                        <button class="slider__callback button button_white button_tranparent">Заполнить заявку</button>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <div class="slider__item" style="background: url(./images/main-slider/1.jpg)">
+                                    <div class="container">
+                                        <div class="slider__title">
+                                            Издай свою книгу!
+                                        </div>
+                                        <div class="slider__text">
+                                            Наши специалисты станут вашими проводниками на всех этапах подготовки, производства и реализации книги
+                                        </div>
+                                        <button class="slider__callback button button_white button_tranparent">Заполнить заявку</button>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <div class="slider__item" style="background: url(./images/main-slider/1.jpg)">
+                                    <div class="container">
+                                        <div class="slider__title">
+                                            Издай свою книгу!
+                                        </div>
+                                        <div class="slider__text">
+                                            Наши специалисты станут вашими проводниками на всех этапах подготовки, производства и реализации книги
+                                        </div>
+                                        <button class="slider__callback button button_white button_tranparent">Заполнить заявку</button>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <div class="slider__item" style="background: url(./images/main-slider/1.jpg)">
+                                    <div class="container">
+                                        <div class="slider__title">
+                                            Издай свою книгу!
+                                        </div>
+                                        <div class="slider__text">
+                                            Наши специалисты станут вашими проводниками на всех этапах подготовки, производства и реализации книги
+                                        </div>
+                                        <button class="slider__callback button button_white button_tranparent">Заполнить заявку</button>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div class="slider__pagination">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <div class="about">
+                <div class="arrow-left about__arrow">
+                    <p class="about__text">
+                        Новые Горизонты — это удобный издательский сервис для начинающих авторов, с помощью которого Вы можете начать продавать
+                        свои книги уже сегодня!
+                    </p>
+                </div>
+                <div class="container">
+                    <div class="row about__content">
+                        
+                            <div class="col-lg-6 col-xl-4  offset-xl-2 ">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolores vitae ratione necessitatibus placeat. Quo, dolores sint ad vel ex, laborum, quibusdam aliquid quae explicabo soluta blanditiis error voluptas aut!</p><p>Cum optio a explicabo excepturi laudantium earum sit soluta vero natus deserunt ducimus modi, voluptatem laboriosam minima iure, eligendi exercitationem?</p>
+                            </div>
+                        
+                            <div class="col-lg-6 col-xl-4 ">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolores vitae ratione necessitatibus placeat. Quo, dolores sint ad vel ex, laborum, quibusdam aliquid quae explicabo soluta blanditiis error voluptas aut!</p><p>Cum optio a explicabo excepturi laudantium earum sit soluta vero natus deserunt ducimus modi, voluptatem laboriosam minima iure, eligendi exercitationem?</p>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <section class="advantages">
+                <div class="arrow-title arrow-title_left">
+                    Наши преимущества
+                </div>
+                <div class="container">
+                    <div class="row">
+                        
+                            <div class="col-lg-4">
+                                <div class="advantages__item">
+                                    <div class="advantages__icon">
+                                        <img src="./images/advantages/1.svg" alt="Персональный агент">
+                                    </div>
+                                    <div class="advantages__title">Персональный агент</div>
+                                    <div class="advantages__text">
+                                        
+                                    </div>
+                                    <ul class="advantages__list">
+                                        
+                                            <li>следит за качеством и сроками выполнения работ;</li>
+                                        
+                                            <li>всегда на связи и готов ответить на все вопросы;</li>
+                                        
+                                            <li>осуществляет обмен файлами между авторами и отделами;</li>
+                                        
+                                            <li>информирует об успехах продаж;</li>
+                                        
+                                            <li>помогает при участии или посещении книжных презентаций и ярмарок.</li>
+                                        
+                                    </ul>
+                                    <div class="advantages__more"></div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-lg-4">
+                                <div class="advantages__item">
+                                    <div class="advantages__icon">
+                                        <img src="./images/advantages/2.svg" alt="Фрагментарное редактирование">
+                                    </div>
+                                    <div class="advantages__title">Фрагментарное редактирование</div>
+                                    <div class="advantages__text">
+                                        Фрагментарное редактирование позволяет:
+                                    </div>
+                                    <ul class="advantages__list">
+                                        
+                                            <li>приступить к изданию книги ещё на стадии её написания;</li>
+                                        
+                                            <li>грамотно распределить расходы на издание, оплачивая каждый редактируемый отрывок отдельно.</li>
+                                        
+                                    </ul>
+                                    <div class="advantages__more">Авторам, совершающим единоразовую оплату за все выбранные услуги, скидка 10%</div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-lg-4">
+                                <div class="advantages__item">
+                                    <div class="advantages__icon">
+                                        <img src="./images/advantages/3.svg" alt="Быстрая реализация">
+                                    </div>
+                                    <div class="advantages__title">Быстрая реализация</div>
+                                    <div class="advantages__text">
+                                        Бесплатно разместим вашу книгу в нашем интернет-магазине.
+                                    </div>
+                                    <ul class="advantages__list">
+                                        
+                                    </ul>
+                                    <div class="advantages__more"></div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="services">
+                <div class="arrow-title arrow-title_right">
+                    Пакеты издания
+                </div>
+                <div class="container">
+                    <div class="row">
+                        
+                            <div class="col-lg-4">
+                                <div data-micromodal-trigger="modal-1" class="services__item">
+                                    <div class="services__icon">
+                                        <img src="./images/services/1.svg" alt="">
+                                    </div>
+                                    <div class="services__title">Минимум</div>
+                                    <div class="services__text">Верстка, печать</div>
+                                    <a class="services__link">
+                                        <div>Подробнее</div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="col-lg-4">
+                                <div data-micromodal-trigger="modal-1" class="services__item">
+                                    <div class="services__icon">
+                                        <img src="./images/services/2.svg" alt="">
+                                    </div>
+                                    <div class="services__title">Стандарт</div>
+                                    <div class="services__text">Верстка, корректура, печать</div>
+                                    <a class="services__link">
+                                        <div>Подробнее</div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="col-lg-4">
+                                <div data-micromodal-trigger="modal-1" class="services__item">
+                                    <div class="services__icon">
+                                        <img src="./images/services/3.svg" alt="">
+                                    </div>
+                                    <div class="services__title">Максимум</div>
+                                    <div class="services__text">Верстка, корректура, редактирование, отрисовка обложки художником</div>
+                                    <a class="services__link">
+                                        <div>Подробнее</div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="start-sell">
+                <div class="arrow-title arrow-title_left">
+                    Чтобы начать продавать свою книгу
+                </div>
+                <div class="container">
+                    <div class="start-sell__list">
+                        
+                            <li>Заполните форму заявки на нашем сайте</li>
+                        
+                            <li>Загрузите аннотацию и обложку</li>
+                        
+                            <li>Расскажите о Вашей книге в социальных сетях</li>
+                        
+                    </div>
+                </div>
+            </section>
+            <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                        <header class="modal__header">
+                            <h2 class="modal__title" id="modal-1-title">
+                                Micromodal
+                            </h2>
+                            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                        </header>
+                        <main class="modal__content" id="modal-1-content">
+                            <p>
+                                Try hitting the
+                                <code>tab</code>
+                                key and notice how the focus stays within the modal itself. Also,
+                                <code>esc</code>
+                                to close modal.
+                            </p>
+                        </main>
+                        <footer class="modal__footer">
+                            <button class="modal__btn modal__btn-primary">Continue</button>
+                            <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        
+                    </main>
+                    <footer class="footer"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-4">
+                        <a class="footer__logo" href="/">
+                            <img src="./images/logo-white.png" alt="Новые горизонты">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-xl-4 d-flex flex-column align-items-center d-lg-block">
+                        <a class="footer__email" href="mailto:ngbooks.izd.servis@gmail.com">ngbooks.izd.servis@gmail.com</a>
+                        <div class="footer__phone">
+                            <a class="footer__phone-wa" href="#"><img src="./images/icons/whatsapp.svg">
+                            </a>
+                            <a class="footer__phone-number" href="tel:+79009619699">+7-900-961-96-99</a>
+                        </div>
+                        <ul class="footer__socials">
+                            <li>
+                                <a href="#"><img src="./images/icons/vk.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/icons/instagram.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/icons/facebook.svg">
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="footer__rules" href="#">Пользовательское соглашение</a>
+                    </div>
+                    <div class="col-lg-4 col-xl-4">
+                        <div class="footer__problems">
+                            Проблемы с функционированием сайта или хотите обратиться к нам?
+                            <br> Сообщите об этом в разделе «Помощь».
+                        </div>
+                        <form action="#" class="footer__form">
+                            <div class="footer__form-title">
+                                Подпишитесь на нашу рассылку
+                            </div>
+                            <input placeholder="Как к Вам обращаться?" class="footer__form-input" type="text">
+                            <input placeholder="Электронная почта" class="footer__form-input" type="text">
+                            <button class="footer__form-submit">Подписаться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+                        </footer>
+                    </div>
+                    <script src="./js/libs.min.js"></script>
+                    <script src="./js/main.min.js"></script>
+                </body>
+            </html>
