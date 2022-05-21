@@ -1,0 +1,111 @@
+{
+    "menu": [
+        "Магазин",
+        "Заявки",
+        "Наши авторы",
+        "Новости",
+        "Помощь",
+        "Контакты"
+    ],
+    "slider": [
+        {
+            "image": "./images/main-slider/1.jpg",
+            "title": "Издай свою книгу!",
+            "text": "Наши специалисты станут вашими проводниками на всех этапах подготовки, производства и реализации книги"
+        },
+        {
+            "image": "./images/main-slider/1.jpg",
+            "title": "Издай свою книгу!",
+            "text": "Наши специалисты станут вашими проводниками на всех этапах подготовки, производства и реализации книги"
+        },
+        {
+            "image": "./images/main-slider/1.jpg",
+            "title": "Издай свою книгу!",
+            "text": "Наши специалисты станут вашими проводниками на всех этапах подготовки, производства и реализации книги"
+        },
+        {
+            "image": "./images/main-slider/1.jpg",
+            "title": "Издай свою книгу!",
+            "text": "Наши специалисты станут вашими проводниками на всех этапах подготовки, производства и реализации книги"
+        }
+    ],
+    "about": [
+        "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolores vitae ratione necessitatibus placeat. Quo, dolores sint ad vel ex, laborum, quibusdam aliquid quae explicabo soluta blanditiis error voluptas aut!</p><p>Cum optio a explicabo excepturi laudantium earum sit soluta vero natus deserunt ducimus modi, voluptatem laboriosam minima iure, eligendi exercitationem?</p>",
+        "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolores vitae ratione necessitatibus placeat. Quo, dolores sint ad vel ex, laborum, quibusdam aliquid quae explicabo soluta blanditiis error voluptas aut!</p><p>Cum optio a explicabo excepturi laudantium earum sit soluta vero natus deserunt ducimus modi, voluptatem laboriosam minima iure, eligendi exercitationem?</p>"
+    ],
+    "advantages": [
+        
+        {
+            "title": "Персональный агент",
+            "list": [
+                "следит за качеством и сроками выполнения работ;",
+                "всегда на связи и готов ответить на все вопросы;",
+                "осуществляет обмен файлами между авторами и отделами;",
+                "информирует об успехах продаж;",
+                "помогает при участии или посещении книжных презентаций и ярмарок."
+            ]
+        },
+        {
+            "title": "Фрагментарное редактирование",
+            "text": "Фрагментарное редактирование позволяет:",
+            "list": [
+                "приступить к изданию книги ещё на стадии её написания;",
+                "грамотно распределить расходы на издание, оплачивая каждый редактируемый отрывок отдельно."
+            ],
+            "boldText": "Авторам, совершающим единоразовую оплату за все выбранные услуги, скидка 10%"
+        },
+        {
+            "title": "Быстрая реализация",
+            "text": "Бесплатно разместим вашу книгу в нашем интернет-магазине."
+        }
+    
+    ],
+    "services": [
+        {
+            "title": "Минимум",
+            "text": "Верстка, печать",
+            "list": []
+        },
+        {
+            "title": "Стандарт",
+            "text": "Верстка, корректура, печать",
+            "list": [
+                {
+                    "title": "А5 150 стр. мягкая обложка:",
+                    "list": [
+                        "30 экз. — от 12000 рублей",
+                        "50 экз. — от 15000 рублей",
+                        "100 экз. — от 17000 рублей"
+                    ]
+                },
+                {
+                    "title": "А5 150 стр. мягкая обложка:",
+                    "list": [
+                        "30 экз. — от 12000 рублей",
+                        "50 экз. — от 15000 рублей",
+                        "100 экз. — от 17000 рублей"
+                    ]
+                },
+                {
+                    "title": "А5 150 стр. мягкая обложка:",
+                    "list": [
+                        "30 экз. — от 12000 рублей",
+                        "50 экз. — от 15000 рублей",
+                        "100 экз. — от 17000 рублей"
+                    ]
+                }
+            ],
+            "more": "<b>ISBN</b> — 3500 рублей; <b>дизайн обложки</b> — от 1000 до 2500 рублей."
+        },
+        {
+            "title": "Максимум",
+            "text": "Верстка, корректура, редактирование, отрисовка обложки художником",
+            "list": []
+        }
+    ],
+    "startSell": [
+        "Заполните форму заявки на нашем сайте",
+        "Загрузите аннотацию и обложку",
+        "Расскажите о Вашей книге в социальных сетях"
+    ]
+}
