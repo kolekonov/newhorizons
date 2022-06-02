@@ -133,7 +133,7 @@ const watch = () => {
   browsersync.init({
     server: {
         baseDir: "./dist",
-        index: "index.html"
+        index: "routes.html"
     }
   })
   gulp.watch('dist/*.html').on('change', browsersync.reload)

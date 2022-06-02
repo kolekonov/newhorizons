@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        {% import "./templates/blocks.njk" as b %}
+        {% extends "./templates/layout.njk" %}
+        {% block main %}
+            <section class="news-detail">
+                <div class="container">
+                    <div class="row align-items-center news-detail__head">
+                        <div class="col-lg-4 col-xl-4">
+                            <div class="news-detail__image">
+                                <img width="390" heigth="390" src="./images/news-detail/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-xl-7 offset-lg-1">
+                            <div class="news-detail__date">{{ newsDetail.date }}</div>
+                            <div class="news-detail__title">{{ newsDetail.title }}</div>
+                            <div class="news-detail__desc">{{ newsDetail.desc }}</div>
+                            <div class="news-detail__like">
+                                {{ b.likesBlock() }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-detail__text news-text">
+                        {% for text in newsDetail.moreText %}
+                            <div class="news-text__item">
+                                <div class="news-text__title">{{ text.title }}</div>
+                                <div class="news-text__desc">{{ text.text | safe }}</div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        {% endblock main %}
+    </body>
+</html>

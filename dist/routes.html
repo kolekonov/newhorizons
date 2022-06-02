@@ -93,18 +93,61 @@
                             </div>
                             <div class="col-lg-9 col-xl-9">
                                 <ul class="menu">
-                                    {% for item in menu %}
+                                    
                                         <li class="menu__item">
-                                            <a class="menu__link" href="#">{{ item }}</a>
+                                            <a class="menu__link" href="#">Магазин</a>
                                         </li>
-                                    {% endfor %}
+                                    
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#">Заявки</a>
+                                        </li>
+                                    
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#">Наши авторы</a>
+                                        </li>
+                                    
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#">Новости</a>
+                                        </li>
+                                    
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#">Помощь</a>
+                                        </li>
+                                    
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#">Контакты</a>
+                                        </li>
+                                    
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
-            <main class="main"> {% block main %}{% endblock main %}
+            <main class="main"> 
+            <style>
+                .routes li{
+                    margin-bottom: 15px;
+                }
+                .routes a {
+                    font-size: 25px;
+                    text-decoration: none;
+                }
+            </style>
+            <div class="container">
+                <ul class="routes">
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="news.html">Новости</a>
+                    </li>
+                    <li>
+                        <a href="news-1.html">Новости детальная</a>
+                    </li>
+                </ul>
+            </div>
+        
                 </main>
                 <footer class="footer">
                     <div class="container">

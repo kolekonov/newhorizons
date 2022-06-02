@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        {% import "./templates/blocks.njk" as b %}
+        {% extends "./templates/layout.njk" %}
+        {% block main %}
+            <div class="news">
+                <div class="container">
+                    {% for newsItem in news %}
+                        {% set order = "1" %}
+                        {% set imageAlign = "left" %}
+                        {% if loop.index % 2 === 0 %}
+                            {% set order = "2" %}
+                            {% set imageAlign = "right" %}
+                        {% endif %}
+                        <div class="row news__item align-items-center">
+                            <div class="col-md-6 d-flex justify-content-center d-lg-block col-lg-5 col-xl-4 order-lg-{{ order }}">
+                                <a href="/news-{{ loop.index }}/" class="news__image news__image_{{ imageAlign }}">
+                                    <img src="./images/news/{{ loop.index }}.jpg" alt="{{ newsItem.title }}">
+                                </a>
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center d-lg-block flex-column col-lg-7 col-xl-8 order-lg-1">
+                                <div class="news__date">{{ newsItem.date }}</div>
+                                <div class="news__subtitle">{{ newsItem.subtitle }}</div>
+                                <div class="news__title">{{ newsItem.title }}</div>
+                                <div class="news__desc">{{ newsItem.desc }}</div>
+                                <div class="news__buttons">
+                                    <a href="/news-{{ loop.index }}/" class="news__link link">Читать далее</a>
+                                    {{ b.likesBlock() }}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endblock main %}
+    </body>
+</html>
