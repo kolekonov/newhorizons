@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        {% import "./templates/blocks.njk" as b %}
+        {% extends "./templates/layout.njk" %}
+        {% block main %}
+            <section class="products">
+                <div class="container">
+                    <ul class="filter">
+                        {% for filterItem in filter %}
+                            {% set class = "" %}
+                            {% if loop.index === 1 %}
+                                {% set class = "filter__item_active" %}
+                            {% endif %}
+                            <li class="filter__item {{ class }}">
+                                {{ filterItem }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <div class="sort-wrapper">
+                        <div class="sort sort-wrapper__item">
+                            <div>
+                                По
+                                <span>популярности</span>
+                                <svg width="12" height="8" viewbox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.46567 2.28721L5.99507 5.82887L9.53673 2.29947" stroke="#221E1C" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <ul class="sort-wrapper__variants">
+                                <li>
+                                    сначала дешёвые
+                                </li>
+                                <li>
+                                    сначала дорогие
+                                </li>
+                                <li>
+                                    сначала дешёвые
+                                </li>
+                                <li>
+                                    сначала дорогие
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="count-show sort-wrapper__item">
+                            <div>
+                                По
+                                <span>15</span>
+                                <svg width="12" height="8" viewbox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.46567 2.28721L5.99507 5.82887L9.53673 2.29947" stroke="#221E1C" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <ul class="sort-wrapper__variants">
+                                <li>
+                                    15
+                                </li>
+                                <li>
+                                    30
+                                </li>
+                                <li>
+                                    60
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="products__list row">
+                        {% for product in products %}
+                            <div class="col-md-6 col-xl-4 product-wr">
+                                <div class="product">
+                                    <a href="#" class="product__image">
+                                        <img width="416" height="290" class="" src="./images/products/{{ product.image }}.jpg" alt=" {{ product.name }}">
+                                    </a>
+                                    <div class="product__footer">
+                                        <a href="#" class="product__info">
+                                            <div class="product__author">
+                                                {{ product.author }}
+                                            </div>
+                                            <div class="product__name">
+                                                {{ product.name }}
+                                            </div>
+                                        </a>
+                                        <div class="product__buttons-wr">
+                                            <div class="product__price">300 ₽</div>
+                                            <div class="product__buttons">
+                                                <div class="product__like">
+                                                    {{b.like('black')}}
+                                                </div>
+                                                <div class="product__basket">
+                                                    {{b.basket('button')}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        {% endblock main %}
+    </body></html>

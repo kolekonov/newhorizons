@@ -17,4 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
       el: ".swiper-pagination",
     },
   });
+
+
+
+
+  const sort = document.querySelectorAll('.sort-wrapper__item');
+  sort.forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('sort-wrapper__item_active');
+    })
+  })
+
+
+
 });
