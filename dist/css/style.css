@@ -437,6 +437,7 @@ img {
 }
 
 button {
+  padding: 0;
   border: none;
   background: none;
   -webkit-appearance: inherit;
@@ -508,6 +509,16 @@ html {
   fill: var(--pink);
 }
 
+.like-number {
+  margin-left: 10px;
+  font-family: var(--accentFont);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--dark);
+}
+
 .like.like_pink {
   fill: var(--pink);
 }
@@ -520,6 +531,54 @@ html {
 }
 .like.like_black:hover {
   fill: var(--dark);
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  max-width: 135px;
+  padding: 35px 0;
+  font-family: var(--accentFont);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--pink);
+}
+.back-button svg {
+  margin-right: 15px;
+  stroke: var(--pink);
+}
+
+.item-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-count__item {
+  font-family: var(--accentFont);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+.item-count__input {
+  width: 100%;
+  max-width: 30px;
+  margin: 0 10px;
+  font-family: var(--accentFont);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  border: none;
+  border-radius: 0;
+  -moz-appearance: textfield;
+}
+.item-count__input::-webkit-outer-spin-button, .item-count__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .header__bar {
@@ -1789,4 +1848,51 @@ html {
     justify-content: center;
     gap: 30px;
   }
+}
+.product-card__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 488px;
+  margin-bottom: 35px;
+}
+.product-card__image img {
+  border-radius: 10px;
+}
+.product-card__buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 488px;
+}
+.product-card__price {
+  font-family: var(--accentFont);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+.product-card__basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 161px;
+  height: 46px;
+  font-family: var(--accentFont);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--black);
+  background: var(--pink);
+  border-radius: 5px;
+}
+.product-card__basket svg {
+  max-width: 28px;
+  margin-right: 15px;
 }

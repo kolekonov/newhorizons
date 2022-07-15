@@ -41,7 +41,8 @@ img {
   max-width: 100%;
   height: auto;
 }
-button{
+button {
+  padding: 0;
   border: none;
   background: none;
   appearance: inherit;
@@ -113,6 +114,16 @@ html {
   }
 }
 
+.like-number{
+  margin-left: 10px;
+  font-family: var(--accentFont);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--dark);
+}
+
 .like.like_pink {
   fill: var(--pink);
   &:hover {
@@ -124,6 +135,61 @@ html {
   fill: var(--dark);
   &:hover {
     fill: var(--dark);
+  }
+}
+
+// Back button
+
+.back-button {
+  display: flex;
+  align-items: center;
+  max-width: 135px;
+  padding: 35px 0;
+  font-family: var(--accentFont);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--pink);
+  svg {
+    margin-right: 15px;
+    stroke: var(--pink);
+  }
+}
+
+// Count input
+
+.item-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__item {
+    font-family: var(--accentFont);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: var(--black);
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 30px;
+    margin: 0 10px;
+    font-family: var(--accentFont);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black);
+    border: none;
+    border-radius: 0;
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
   }
 }
 
@@ -430,7 +496,7 @@ html {
     flex-direction: column;
     align-items: center;
   }
-  .footer__problems{
+  .footer__problems {
     margin-top: 30px;
   }
 }
@@ -1412,7 +1478,7 @@ html {
   margin-bottom: 10px;
 }
 
-.product__buttons-wr{
+.product__buttons-wr {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1428,54 +1494,106 @@ html {
   color: var(--black);
 }
 
-.product__buttons{
+.product__buttons {
   display: flex;
   gap: 0 30px;
 }
 
-@media (max-width: 1400px){
-  .product__image{
+@media (max-width: 1400px) {
+  .product__image {
     align-items: start;
   }
 }
 
-@media (max-width: 992px){
-  .product__image{
+@media (max-width: 992px) {
+  .product__image {
     height: 270px;
   }
-  .product__footer{
+  .product__footer {
     padding: 15px 25px;
   }
-  .product__info{
+  .product__info {
     font-size: 18px;
     line-height: 24px;
   }
 }
 
-@media (max-width: 768px){
-  .filter{
+@media (max-width: 768px) {
+  .filter {
     padding: 15px 0;
     gap: 0 20px;
   }
-  .filter__item::after{
+  .filter__item::after {
     display: none;
   }
-  .product__image{
+  .product__image {
     height: auto;
   }
-  .product__footer{
+  .product__footer {
     min-height: auto;
   }
-  .product__info{
+  .product__info {
     margin-bottom: 15px;
     font-size: 14px;
     line-height: 24px;
   }
-  .products__list .product-wr:last-child .product{
+  .products__list .product-wr:last-child .product {
     margin-bottom: 0;
   }
-  .product__buttons-wr{
+  .product__buttons-wr {
     justify-content: center;
     gap: 30px;
+  }
+}
+
+// Product detail
+
+.product-card {
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 488px;
+    margin-bottom: 35px;
+    img {
+      border-radius: 10px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 488px;
+  }
+  &__price {
+    font-family: var(--accentFont);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: var(--black);
+  }
+  &__basket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 161px;
+    height: 46px;
+    font-family: var(--accentFont);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--black);
+    background: var(--pink);
+    border-radius: 5px;
+    svg {
+      max-width: 28px;
+      margin-right: 15px;
+    }
   }
 }
