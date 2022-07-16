@@ -2,7 +2,7 @@
     "menu": [
         {
             "name": "Магазин",
-            "link": "/products.html"
+            "link": "/newhorizons/products.html"
         },
         {
             "name": "Заявки",
@@ -14,7 +14,7 @@
         },
         {
             "name": "Новости",
-            "link": "/news.html"
+            "link": "/newhorizons/news.html"
         },
         {
             "name": "Помощь",
