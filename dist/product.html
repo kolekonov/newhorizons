@@ -95,7 +95,7 @@
                                 <ul class="menu">
                                     
                                         <li class="menu__item">
-                                            <a class="menu__link" href="#">Магазин</a>
+                                            <a class="menu__link" href="/products.html">Магазин</a>
                                         </li>
                                     
                                         <li class="menu__item">
@@ -107,7 +107,7 @@
                                         </li>
                                     
                                         <li class="menu__item">
-                                            <a class="menu__link" href="#">Новости</a>
+                                            <a class="menu__link" href="/news.html">Новости</a>
                                         </li>
                                     
                                         <li class="menu__item">
@@ -135,9 +135,20 @@
         Обратно
     </a>
 
-                    <div class="product-card">
-                        <div class="row">
-                            <div class="col-xl-5">
+                    <div class="row product-detail__info">
+                        <div class="col-lg-6 col-xl-5">
+                            <div class="product-card">
+                                <div class="product-card__authors-wr product-card__authors-wr_mobile">
+                                    <ul class="product-card__authors">
+                                        <li class="product-card__author">
+                                            <a href="#" class="product-card__author-link">Евгения Владимирова</a>,
+                                        </li>
+                                        <li class="product-card__author">
+                                            <a href="#" class="product-card__author-link">Степан Семёнов</a>
+                                        </li>
+                                    </ul>
+                                    <h1 class="product-card__title">«Каникулы — время приключений»</h1>
+                                </div>
                                 <a href="./images/product/product.jpg" class="product-card__image">
                                     <img src="./images/product/product.jpg" alt="">
                                 </a>
@@ -145,7 +156,7 @@
                                     <div class="product-card__price">300 ₽</div>
                                     <div class="item-count">
                                         <button class="item-count__item item-count__item_minus">-</button>
-                                        <input class="item-count__input" min="1" type="number">
+                                        <input class="item-count__input" min="1" value="1" type="number">
                                         <button class="item-count__item item-count__item_minus">+</button>
                                     </div>
                                     <button class="product-card__basket">
@@ -231,43 +242,47 @@
                                     <li class="product-card__tag">#Степан Семёнов</li>
                                 </ul>
                             </div>
-                            <div class="col-xl-7">
+                        </div>
+                        <div class="col-lg-6 col-xl-7">
+                            <div class="product-card__authors-wr product-card__authors-wr_desktop">
                                 <ul class="product-card__authors">
                                     <li class="product-card__author">
-                                        <a href="product-card__author-link">Евгения Владимирова,</a>
+                                        <a href="#" class="product-card__author-link">Евгения Владимирова</a>,
                                     </li>
                                     <li class="product-card__author">
-                                        <a href="product-card__author-link">Степан Семёнов</a>
+                                        <a href="#" class="product-card__author-link">Степан Семёнов</a>
                                     </li>
                                 </ul>
                                 <h1 class="product-card__title">«Каникулы — время приключений»</h1>
-                                <div class="product-card__desc">
-                                    <p>
-                                        Герои книги – компания друзей, учащихся в одном классе.
-                                    </p>
-                                    <p>
-                                        В первой части повести ребята узнают загадочную историю о подземелье, находящемся в одном из театров города. Друзья
-                                        решают самостоятельно разгадать эту загадку. Тем более, что у ребят весенние каникулы,а каникулы – это время
-                                        приключений! После спектакля, спрятавшись за кулисами театра в подсобном помещении, школьники проникают в подземелье.В
-                                        подземелье они находят сундук, в котором обнаруживается старинная тетрадь и перстень.При помощи этих предметов ребята
-                                        каким-то непостижимым образом попадают в прошлое. В конце концов, им удаётся разгадать загадки подземелья – к чему они
-                                        так стремились – и вернуться в своё время.
-                                    </p>
-                                </div>
-                                <a href="#" class="product-card__link button button_black button_tranparent">Читать онлайн</a>
                             </div>
+                            <div class="product-card__desc">
+                                <p>
+                                    Герои книги – компания друзей, учащихся в одном классе.
+                                </p>
+                                <p>
+                                    В первой части повести ребята узнают загадочную историю о подземелье, находящемся в одном из театров города. Друзья
+                                    решают самостоятельно разгадать эту загадку. Тем более, что у ребят весенние каникулы,а каникулы – это время
+                                    приключений! После спектакля, спрятавшись за кулисами театра в подсобном помещении, школьники проникают в подземелье.В
+                                    подземелье они находят сундук, в котором обнаруживается старинная тетрадь и перстень.При помощи этих предметов ребята
+                                    каким-то непостижимым образом попадают в прошлое. В конце концов, им удаётся разгадать загадки подземелья – к чему они
+                                    так стремились – и вернуться в своё время.
+                                </p>
+                            </div>
+                            <a href="#" class="product-card__link button button_black button_tranparent">Читать онлайн</a>
                         </div>
                     </div>
                 </div>
-                <section class="feedback">
+                <section class="feedback product-detail__feedback">
                     <div class="arrow-title arrow-title_right">
                         Отзывы
                     </div>
                     <div class="container">
                         <ul class="feedback__items">
                             
-                                <li class="feedback__item">
-                                    <div class="feedback__avatar">
+                                
+                                
+                                <li class="feedback__item ">
+                                    <div class="feedback__avatar  feedback__avatar_no-photo">
                                         
                                             <img src="./images/feedback/avatar.png" alt="">
                                         
@@ -279,39 +294,41 @@
                                     </div>
                                 </li>
                             
-                                <li class="feedback__item">
-                                    <div class="feedback__avatar">
+                                
+                                
+                                    
+                                
+                                <li class="feedback__item feedback__item_even">
+                                    <div class="feedback__avatar  feedback__avatar_no-photo">
                                         
-                                            <div class="feedback__avatar feedback__avatar_no-photo">
-                                                <svg width="100" height="100" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M50.0029 1.6711e-09C39.4342 -8.63797e-05 29.1372 3.3487 20.5902 9.56561C12.0432 15.7825 5.68583 24.5478 2.43071
-                                                            34.6031C-0.824401 44.6584 -0.809829 55.4865 2.47234 65.533C5.7545 75.5795 12.1355 84.3277 20.6991 90.5216L20.7451
-                                                            90.5536L20.7537 90.5601C29.2704 96.6975 39.5021 100 49.9997 100C60.4974 100 70.729 96.6975 79.2457 90.5601L79.2949
-                                                            90.5258C87.8596 84.3331 94.2419 75.5858 97.5255 65.5396C100.809 55.4935 100.825 44.6652 97.5713 34.6093C94.3175 24.5535
-                                                            87.9611 15.7873 79.4148 9.56927C70.8685 3.35122 60.5718 0.00114976 50.0029 1.6711e-09ZM23.6723 88.0264V84.7911C23.6703
-                                                            81.592 24.2988 78.4238 25.5218 75.4677C26.7448 72.5116 28.5383 69.8255 30.7998 67.5629C33.0614 65.3002 35.7466 63.5055
-                                                            38.7021 62.2812C41.6576 61.0569 44.8254 60.427 48.0244 60.4276H49.8799H50.0029C50.0029 60.4276 50.0842 60.4276 50.1259
-                                                            60.4276H51.9815C55.1805 60.427 58.3483 61.0569 61.3037 62.2812C64.2592 63.5055 66.9445 65.3002 69.206 67.5629C71.4676
-                                                            69.8255 73.2611 72.5116 74.4841 75.4677C75.707 78.4238 76.3355 81.592 76.3335 84.7911V88.0264C68.5986 93.3852 59.4127
-                                                            96.2563 50.0029 96.2563C40.5931 96.2563 31.4073 93.3852 23.6723 88.0264ZM50.1259 56.6896H49.8799C45.4935 56.6715 41.2927
-                                                            54.9176 38.1957 51.8112C35.0986 48.7049 33.3572 44.4987 33.3522 40.1121C33.3522 39.6843 33.3704 39.2501 33.4067
-                                                            38.8137C33.7513 34.6477 35.65 30.7637 38.7257 27.9329C41.8014 25.102 45.8293 23.5315 50.0094 23.5331C54.1895 23.5347
-                                                            58.2161 25.1084 61.2896 27.9416C64.3632 30.7748 66.2588 34.6603 66.6002 38.8266C66.6355 39.2544 66.6537 39.6822 66.6537
-                                                            40.11C66.6486 44.4965 64.9072 48.7027 61.8102 51.8091C58.7131 54.9155 54.5123 56.6694 50.1259 56.6875V56.6896ZM80.0767
-                                                            85.1237V84.7911C80.08 78.7282 78.1214 72.8269 74.4935 67.9693C70.8657 63.1116 65.7634 59.5583 59.9491 57.8404C63.1134
-                                                            56.085 65.7506 53.5151 67.5871 50.3971C69.4237 47.2791 70.3927 43.7266 70.3936 40.1079C70.3936 39.5731 70.3712 39.0383
-                                                            70.3273 38.5207C69.9114 33.4162 67.5903 28.6551 63.8255 25.1833C60.0606 21.7116 55.1274 19.7833 50.0062 19.7817C44.8849
-                                                            19.78 39.9506 21.7052 36.1835 25.1746C32.4164 28.644 30.0923 33.4037 29.6732 38.5079C29.6282 39.033 29.6058 39.571
-                                                            29.6058 40.1121C29.6074 43.7309 30.5774 47.2833 32.4151 50.4007C34.2528 53.5181 36.8913 56.0868 40.0568 57.8404C34.2424
-                                                            59.5582 29.14 63.1114 25.5121 67.9691C21.8842 72.8268 19.9257 78.7281 19.9291 84.7911V85.1237C12.7459 78.9766 7.6188
-                                                            70.7759 5.23823 61.626C2.85766 52.4761 3.33797 42.8164 6.61448 33.9478C9.89099 25.0792 15.8063 17.4276 23.5639
-                                                            12.0235C31.3215 6.61934 40.5487 3.72219 50.0029 3.72219C59.4572 3.72219 68.6844 6.61934 76.442 12.0235C84.1995 17.4276
-                                                            90.1149 25.0792 93.3914 33.9478C96.6679 42.8164 97.1482 52.4761 94.7676 61.626C92.387 70.7759 87.2599 78.9766 80.0767
-                                                            85.1237Z"
-                                                        fill="#E6CCBF"/>
-                                                </svg>
-                                            </div>
+                                            <svg width="100" height="100" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M50.0029 1.6711e-09C39.4342 -8.63797e-05 29.1372 3.3487 20.5902 9.56561C12.0432 15.7825 5.68583 24.5478 2.43071
+                                                        34.6031C-0.824401 44.6584 -0.809829 55.4865 2.47234 65.533C5.7545 75.5795 12.1355 84.3277 20.6991 90.5216L20.7451
+                                                        90.5536L20.7537 90.5601C29.2704 96.6975 39.5021 100 49.9997 100C60.4974 100 70.729 96.6975 79.2457 90.5601L79.2949
+                                                        90.5258C87.8596 84.3331 94.2419 75.5858 97.5255 65.5396C100.809 55.4935 100.825 44.6652 97.5713 34.6093C94.3175 24.5535
+                                                        87.9611 15.7873 79.4148 9.56927C70.8685 3.35122 60.5718 0.00114976 50.0029 1.6711e-09ZM23.6723 88.0264V84.7911C23.6703
+                                                        81.592 24.2988 78.4238 25.5218 75.4677C26.7448 72.5116 28.5383 69.8255 30.7998 67.5629C33.0614 65.3002 35.7466 63.5055
+                                                        38.7021 62.2812C41.6576 61.0569 44.8254 60.427 48.0244 60.4276H49.8799H50.0029C50.0029 60.4276 50.0842 60.4276 50.1259
+                                                        60.4276H51.9815C55.1805 60.427 58.3483 61.0569 61.3037 62.2812C64.2592 63.5055 66.9445 65.3002 69.206 67.5629C71.4676
+                                                        69.8255 73.2611 72.5116 74.4841 75.4677C75.707 78.4238 76.3355 81.592 76.3335 84.7911V88.0264C68.5986 93.3852 59.4127
+                                                        96.2563 50.0029 96.2563C40.5931 96.2563 31.4073 93.3852 23.6723 88.0264ZM50.1259 56.6896H49.8799C45.4935 56.6715 41.2927
+                                                        54.9176 38.1957 51.8112C35.0986 48.7049 33.3572 44.4987 33.3522 40.1121C33.3522 39.6843 33.3704 39.2501 33.4067
+                                                        38.8137C33.7513 34.6477 35.65 30.7637 38.7257 27.9329C41.8014 25.102 45.8293 23.5315 50.0094 23.5331C54.1895 23.5347
+                                                        58.2161 25.1084 61.2896 27.9416C64.3632 30.7748 66.2588 34.6603 66.6002 38.8266C66.6355 39.2544 66.6537 39.6822 66.6537
+                                                        40.11C66.6486 44.4965 64.9072 48.7027 61.8102 51.8091C58.7131 54.9155 54.5123 56.6694 50.1259 56.6875V56.6896ZM80.0767
+                                                        85.1237V84.7911C80.08 78.7282 78.1214 72.8269 74.4935 67.9693C70.8657 63.1116 65.7634 59.5583 59.9491 57.8404C63.1134
+                                                        56.085 65.7506 53.5151 67.5871 50.3971C69.4237 47.2791 70.3927 43.7266 70.3936 40.1079C70.3936 39.5731 70.3712 39.0383
+                                                        70.3273 38.5207C69.9114 33.4162 67.5903 28.6551 63.8255 25.1833C60.0606 21.7116 55.1274 19.7833 50.0062 19.7817C44.8849
+                                                        19.78 39.9506 21.7052 36.1835 25.1746C32.4164 28.644 30.0923 33.4037 29.6732 38.5079C29.6282 39.033 29.6058 39.571
+                                                        29.6058 40.1121C29.6074 43.7309 30.5774 47.2833 32.4151 50.4007C34.2528 53.5181 36.8913 56.0868 40.0568 57.8404C34.2424
+                                                        59.5582 29.14 63.1114 25.5121 67.9691C21.8842 72.8268 19.9257 78.7281 19.9291 84.7911V85.1237C12.7459 78.9766 7.6188
+                                                        70.7759 5.23823 61.626C2.85766 52.4761 3.33797 42.8164 6.61448 33.9478C9.89099 25.0792 15.8063 17.4276 23.5639
+                                                        12.0235C31.3215 6.61934 40.5487 3.72219 50.0029 3.72219C59.4572 3.72219 68.6844 6.61934 76.442 12.0235C84.1995 17.4276
+                                                        90.1149 25.0792 93.3914 33.9478C96.6679 42.8164 97.1482 52.4761 94.7676 61.626C92.387 70.7759 87.2599 78.9766 80.0767
+                                                        85.1237Z"
+                                                    fill="#E6CCBF"/>
+                                            </svg>
                                         
                                     </div>
                                     <div class="feedback__body">
@@ -321,8 +338,10 @@
                                     </div>
                                 </li>
                             
-                                <li class="feedback__item">
-                                    <div class="feedback__avatar">
+                                
+                                
+                                <li class="feedback__item ">
+                                    <div class="feedback__avatar  feedback__avatar_no-photo">
                                         
                                             <img src="./images/feedback/avatar.png" alt="">
                                         
@@ -342,26 +361,31 @@
                 </section>
                 <section class="similar-products">
                     <div class="arrow-title arrow-title_left">
-                        Наши преимущества
+                        Похожие товары
                     </div>
                     <div class="container">
-                        <div class="row">
+                        <div class="products__list row">
                             
-                            <div class="col-xl-4">
-                                <div class="similar-product">
-                                    <a class="similar-product__image" href="">
-                                        <img src="./images/similar-products/1.jpg" alt="">
-                                    </a>
-                                    <a href="similar-product__name">
-                                        Виктор Скитальцев «Скиталец»
-                                    </a>
-                                    <div class="similar-product__buttons">
-                                        <div class="similar-product__price">
-                                            300 ₽
-                                        </div>
-                                        <div class="similar-product__like">
-                                            
-    <button class="like like_pink">
+                                <div class="col-md-6 col-xl-4 product-wr">
+                                    <div class="product">
+                                        <a href="#" class="product__image">
+                                            <img width="416" height="290" class="" src="./images/similar-products/1.jpg" alt=" Виктор Скитальцев «Скиталец»">
+                                        </a>
+                                        <div class="product__footer">
+                                            <a href="#" class="product__info">
+                                                <div class="product__author">
+                                                    
+                                                </div>
+                                                <div class="product__name">
+                                                    Виктор Скитальцев «Скиталец»
+                                                </div>
+                                            </a>
+                                            <div class="product__buttons-wr">
+                                                <div class="product__price">300 ₽</div>
+                                                <div class="product__buttons">
+                                                    <div class="product__like">
+                                                        
+    <button class="like like_black">
         <svg width="25" height="25" viewbox="0 0 25 25" fill="" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M12.5 23.6092C12.1441 23.6092 11.8009 23.4802 11.5335 23.246C10.5236 22.3629 9.54989 21.533 8.69082 20.801L8.68643
@@ -382,9 +406,9 @@
         </svg>
     </button>
 
-                                        </div>
-                                        <div class="similar-product__basket">
-                                            
+                                                    </div>
+                                                    <div class="product__basket">
+                                                        
     
         <button class="basket">
         
@@ -415,26 +439,33 @@
             </button>
     
 
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             
-                            <div class="col-xl-4">
-                                <div class="similar-product">
-                                    <a class="similar-product__image" href="">
-                                        <img src="./images/similar-products/2.jpg" alt="">
-                                    </a>
-                                    <a href="similar-product__name">
-                                        Ярослав Смирнов«Воспоминания Рок-н-рольщика»
-                                    </a>
-                                    <div class="similar-product__buttons">
-                                        <div class="similar-product__price">
-                                            300 ₽
-                                        </div>
-                                        <div class="similar-product__like">
-                                            
-    <button class="like like_pink">
+                                <div class="col-md-6 col-xl-4 product-wr">
+                                    <div class="product">
+                                        <a href="#" class="product__image">
+                                            <img width="416" height="290" class="" src="./images/similar-products/2.jpg" alt=" Ярослав Смирнов«Воспоминания Рок-н-рольщика»">
+                                        </a>
+                                        <div class="product__footer">
+                                            <a href="#" class="product__info">
+                                                <div class="product__author">
+                                                    
+                                                </div>
+                                                <div class="product__name">
+                                                    Ярослав Смирнов«Воспоминания Рок-н-рольщика»
+                                                </div>
+                                            </a>
+                                            <div class="product__buttons-wr">
+                                                <div class="product__price">300 ₽</div>
+                                                <div class="product__buttons">
+                                                    <div class="product__like">
+                                                        
+    <button class="like like_black">
         <svg width="25" height="25" viewbox="0 0 25 25" fill="" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M12.5 23.6092C12.1441 23.6092 11.8009 23.4802 11.5335 23.246C10.5236 22.3629 9.54989 21.533 8.69082 20.801L8.68643
@@ -455,9 +486,9 @@
         </svg>
     </button>
 
-                                        </div>
-                                        <div class="similar-product__basket">
-                                            
+                                                    </div>
+                                                    <div class="product__basket">
+                                                        
     
         <button class="basket">
         
@@ -488,26 +519,33 @@
             </button>
     
 
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             
-                            <div class="col-xl-4">
-                                <div class="similar-product">
-                                    <a class="similar-product__image" href="">
-                                        <img src="./images/similar-products/3.jpg" alt="">
-                                    </a>
-                                    <a href="similar-product__name">
-                                        Евгения Владимирова, Степан Семёнов «Каникулы — времяприключений»
-                                    </a>
-                                    <div class="similar-product__buttons">
-                                        <div class="similar-product__price">
-                                            300 ₽
-                                        </div>
-                                        <div class="similar-product__like">
-                                            
-    <button class="like like_pink">
+                                <div class="col-md-6 col-xl-4 product-wr">
+                                    <div class="product">
+                                        <a href="#" class="product__image">
+                                            <img width="416" height="290" class="" src="./images/similar-products/3.jpg" alt=" Евгения Владимирова, Степан Семёнов «Каникулы — времяприключений»">
+                                        </a>
+                                        <div class="product__footer">
+                                            <a href="#" class="product__info">
+                                                <div class="product__author">
+                                                    
+                                                </div>
+                                                <div class="product__name">
+                                                    Евгения Владимирова, Степан Семёнов «Каникулы — времяприключений»
+                                                </div>
+                                            </a>
+                                            <div class="product__buttons-wr">
+                                                <div class="product__price">300 ₽</div>
+                                                <div class="product__buttons">
+                                                    <div class="product__like">
+                                                        
+    <button class="like like_black">
         <svg width="25" height="25" viewbox="0 0 25 25" fill="" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M12.5 23.6092C12.1441 23.6092 11.8009 23.4802 11.5335 23.246C10.5236 22.3629 9.54989 21.533 8.69082 20.801L8.68643
@@ -528,9 +566,9 @@
         </svg>
     </button>
 
-                                        </div>
-                                        <div class="similar-product__basket">
-                                            
+                                                    </div>
+                                                    <div class="product__basket">
+                                                        
     
         <button class="basket">
         
@@ -561,10 +599,12 @@
             </button>
     
 
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             
                         </div>
                     </div>

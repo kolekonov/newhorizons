@@ -95,7 +95,7 @@
                                 <ul class="menu">
                                     {% for item in menu %}
                                         <li class="menu__item">
-                                            <a class="menu__link" href="#">{{ item }}</a>
+                                            <a class="menu__link" href="{{ item.link }}">{{ item.name }}</a>
                                         </li>
                                     {% endfor %}
                                 </ul>
