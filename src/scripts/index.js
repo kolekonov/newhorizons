@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
   });
 
